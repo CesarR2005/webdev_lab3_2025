@@ -204,6 +204,84 @@ label {
 
 /* ===== LAYOUT STYLES ====== */
 
+body {
+  font-family:'Playwrite IT Moderna', Arial, serif;
+  font-size: 1rem; 
+  line-height: 1.5; 
+}
+
+/* Baseline Grid*/
+#content {
+  display: grid;
+  place-items: center; 
+  min-height: 100vh;
+  background-color: #687275;
+}
+/* Form basic style*/
+form {
+  background-color: #fafafa;
+  padding: 2rem;
+  text-align: center;
+  width: auto;  
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 0rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+/* Form content basic padding */
+
+h1 {
+  padding: 0.5rem;
+}
+
+p {
+  padding: 0.5rem;
+}
+
+/* Checkbox Styling */
+#input-age-verification input[type="checkbox"] {
+  width: auto; 
+  margin-right: 1rem; 
+}
+
+/* Submit Button Styling */
+#input-submit input[type="submit"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #f0f0f0; 
+  border: none;
+  border-radius: 0.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/*Typographic modular scale */
+
+h1 {
+  font-size: 3.5rem; 
+}
+
+p {
+  font-size: 1.5rem; 
+}
+
+#input-email {
+  font-size: 1rem;
+}
+
+#input-age-verification {
+  font-size: 1rem;
+}
 
 /* ===== STATE STYLES ======= */
 
+/*Input Styling */
+#input-email input:focus, 
+#input-age-verification input:focus {
+  background-color: #dcdcdc; 
+  outline: none; 
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1); 
+}
+/* Submit button hover*/
+#input-submit input[type="submit"]:hover {
+  background-color: #dcdcdc; 
+}
